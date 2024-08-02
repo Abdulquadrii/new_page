@@ -258,7 +258,13 @@ button{
     }
     .icon-open{
         display: block;
-        
+    }
+    .navigation{
+        display: flex;
+
+    }
+    .navigation >nav >ul >li::after{
+        display: none;
     }
     .navigation >nav{
         display: none;
@@ -270,6 +276,10 @@ button{
         background-color: hsla(233, 26%, 24%,0.5);
         padding-top: 1.5rem;
     
+    }
+    .navigation >img{
+        margin-left: -4.5rem;
+        margin-right: -2rem;
     }
     .navigation >nav >ul >li{
         display: block;
@@ -292,7 +302,9 @@ button{
     .navigation >button{
         display: none;
     }
-    
+    /* .header-1 >button{
+        float:none;
+    } */
     .main-header{
         flex-direction: column-reverse;
         background-image: url(./images/bg-intro-mobile.svg);
@@ -312,6 +324,8 @@ button{
     }
     .header-1{
         padding-left: 1rem;
+        padding-bottom: 4rem;
+        text-align: center;
     }
     .header-1 >h1{
         width: 70%;
